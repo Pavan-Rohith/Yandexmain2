@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yandex Main</title>
+    </head>
+    <style>
+        header{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+            flex-direction: end;
+            margin-top: 40px;
+            border-radius: 30px;
+        }
+        .logo2{
+            display: inline-block;
+            column-gap: 60px;
+            justify-content: space-around;
+            gap: 40px;
+        }
+        .logo-two{
+            height: 50px;
+            width: 90px;
+            align-items: flex-end ;
+            margin-left: 800px;
+            margin-top: 20px;
+     
+        }
+            .logo2-two{
+            margin-left: 120px;
+            flex-direction: column;
+            flex: end;
+            margin-top: 50px;
+        }
+        .logo3 ul li{
+            display: inline-block;
+            flex-direction: column;
+            margin-left: 100px;
+            column-gap: 20px;
+        }
+        li .imsge{
+            display: flex;
+        }
+        .search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    margin-left: 400px;
+    margin-top: 30px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color:green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    </style>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAbFBMVEX/////AAD/JCT/1tb/NTX/39//9/f/vb3+UVH/DQ3/KSn/4+P//Pz/6en/wMD/kZH/GBj/Ojr/QED/8vL/0ND/t7f/hIT/yMj/pKT/Vlb/s7P/Xl7/rq7/mZn/Skr/a2v/c3P/ZWX/fn7+ioqEQ00EAAAE10lEQVR4nO2c2XriMAyFSQKBQFgKlH3n/d9x+g1MoXBOcIxjKx39t22EhG1ZOnZoNBRFURRFURRFURRFURRFURRFURRFUX4TCaSV2lvMe9Bk353PlNkoBowW9hYHY2QxmrvzmdKPIMeetcUhNDh+Y6yNyWc4mpWtwekY2vt06TT/cBzMwXaOL6C5po8l02hMDjiagZ251hJaW/iYZV/McTCniZW1NjTWTRw7zejv4ednVp9PjJ3tvhkLVnhozjYzA6/A2EdevtBa46GxyM4pXoDW2cQCnICibXlLeNfKNu59piQdHE15S3jDfGMHtgD7EJWuaXJnQ/wGyc7N0GyhlU6rCp85JxxM2bmeQSuzSlzmTJvQjXFeysonNNKcVuQ0Be91o3LlIZ6s+4pc5sxH0JF1maHBNkb+Nsxv8LfabZcwgUd3V5nLnAH0JDqYW0jwuvPTyDwQQ1fG5quXdHkVuswh5aZxXm3hMsLvhvkNDmZn2gngDTPy1JQ9QobG8KvtHeHT52p9pvTxqlmaFSMrnNs9VzLf5KQT2JjsNRNcEB0CzbKvJYyHZm1SwM/xswE2zCsp6QQMdBry6NFjh/kIqWmOr9WIpAufDLJhXpmQfe9ldibLzTB3VEQbD83LZdz/gM+9ob47oE/UzVcpABd2xvttRWzI0BQ/leKSe1iutXMOESSj4hSAlb+PcHn5ygIPTXFVgkXEcBvmP3pEQisaGqz8da1PeNwxxArLsOARXMksvWnlnD7uFz+4axMY/junou7A33OBb7iSKYjeIz08z5ZsOad4w/St/BGO5YYGb01ZwBLznh4MJtrjoclx+vOv/BHwESuR0D5xvRy0xLwnwUMzQ9VJjqu5sXenKXjmwPJkjq8wBK9kbpDD9CFYNSQvBy4x75ngKnj8XNIneH0JqGRu4JsJ0eLpC8cdZldIXr7Qwyth99ikEeXvOeiQ5Bs8NKsHL3GHOQrcYT5CTmx3P+cPUf5QoghJSmTwnxIa7jAzQXn5whyXjz/u86Vn+D+W16EqhDga3Z894SIuC6n8EQa4Sevc/QvOy37vlphB7ifdSWgTqJVngY7KillhXf9W2+PDqY6wvHwhxZXKrevCwQrpMB8hEtrp+mepyh8mJzrNdWhwxbMO6zMHZ6vsom7iDs7jZcySpHiedf4OzSHuPhMvQ/vMwZ3XRacZtBEiU9mFCQwm6EnlG+BjwZHPy7DuIBKavFLSBCIkyc1ZhRAJzd/VfpeQ91Fi73dInUBeFdoK64zNICe2sRgtuRT4rnK0FaUmmUKkMU/vkLmG3UIL7ZcVRE5u1jIFsPdRLN8WDMwUq5vN0H7ZQd5HEVzuFzDH/bPYDrkYfNFnJFDtM4Dc3Ty9flIi+MR2XMvamZzYxvXcOBv4gGNfywKNlJuhb5Rakgq+U1YeXG6e6jnP8D3MdT17tByWm7HAIz8T8AVBkcdkr8GH6bN6djVYp5F4GmtCgjbOEq9xigK+IJvVs98kb/vWNJ3hYGpaa+Jg6qnTkmCkXccyBAdzqqey+R8E4/OHixyCg9n/pmCMXnyWBw7G96/9OEKDkYoGIxUNRioajFQ0GKloMFLRYKSiwUhFg5GKBiMVDUYqvyuYbpQ9Ee3qGUyeQkK7pSiKoiiKoiiKoiiKoiiKorjmD0zVNzWYMyUDAAAAAElFTkSuQmCC" alt="Yandex Logo" height="60" width="60">
+
+                <button class="logo-two">Log In</button>
+
+            </div>
+            <div class="logo2">
+                 <img class="logo2-two" src="https://img.icons8.com/?size=30&id=S5biqohaDgd1&format=png" alt="" height="50" width="50">
+            </div>
+        </header>
+        <div class="logo3">
+            <ul>
+                <li><img src="https://img.icons8.com/?size=48&id=12988&format=png" alt="" height="60" width="60">Images</li>
+                <li><img src="https://image.shutterstock.com/image-vector/play-icon-260nw-415243354.jpg" alt="" height="60" width="60">Videos</li>
+                <li><img src="https://img.icons8.com/?size=48&id=13800&format=png" alt="" height="60" width="60">Maps</li>
+                <li><img src="https://img.icons8.com/?size=48&id=KniCOB9YDHbU&format=png" alt="" height="60" width="60">Translate</li>
+                <li><img src="https://img.icons8.com/?size=50&id=2897&format=png" alt="" height="60" width="60">Weather</li>
+                <li><img src="https://img.icons8.com/?size=50&id=53435&format=png" alt="" height="60" width="60">Mail</li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png">
+
+    </body>
+</html>
